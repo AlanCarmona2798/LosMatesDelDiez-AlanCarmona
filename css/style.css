@@ -73,11 +73,13 @@ header{
 nav a{
     font-weight: 600;
     padding-right: 10px;
+    transition: all 1s;
  
 }
 
 nav a:hover{
     color: rgb(180, 7, 248);
+    font-size: 30px 
 }
 
 body h3{
@@ -394,3 +396,56 @@ footer ul{
 /* ------------------------------------------------------- video preparacion mate ----------------------------------------- */
 
 /* ------------------------------------------------------ Animaciones ------------------------------------------------------ */
+
+.texts{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;  
+    color: black;
+    font-family: "Poppins"
+}
+
+
+
+.name{
+    font-size: 3rem;
+    margin-bottom: .5rem;
+    font-family: "Poppins"
+}
+
+.paragraph{
+    font-size: 2rem;
+    font-weight: 300;
+    color: rgb(5, 5, 5);
+    font-family: "Poppins"
+}
+
+.item{
+    position: relative;
+    padding-left: 1rem;
+
+}
+
+.item::before{
+    content: "";
+    display: block;
+    background: slateblue;
+    width: 120%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    clip-path: var(--clippy);
+    transition: clip-path 2s;
+}
+
+.paragraph::before{
+    background: salmon;
+    
+}
+
+.item:hover::before{
+    clip-path: polygon(0 0, 81% 0, 100% 100%, 0 100%);
+}
