@@ -49,6 +49,8 @@ body{
     
 }
 
+
+
 header a{
     text-decoration: none;
     color: rgb(255, 254, 254);
@@ -57,8 +59,8 @@ header a{
 header{
     grid-area: header;
     background: linear-gradient(#141e30, #0E6251);
-    border-top: 3px solid #ffffff;
-    border-bottom: 3px solid #ffffff;
+    border-top: 3px solid #000000;
+    border-bottom: 3px solid #000000;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -154,6 +156,7 @@ footer h2{
 }
 
 
+
 ul {
     list-style-type: square;
     margin: 10px;
@@ -174,7 +177,6 @@ footer ul{
 
 .footer-color{
     background: linear-gradient(#141e30, #0E6251);
-    margin: -5px;
     padding: 10px;
 }
 
@@ -223,6 +225,16 @@ footer ul{
     color: black;
 }
 
+.card-group{
+    margin-bottom: 60px;
+}
+
+.card:hover{
+    transform: scale(1.1);
+    box-shadow: 10px 5px 10px black;
+    transition: all 1s;
+}
+
 
 /* quienes somos? */
 
@@ -256,7 +268,7 @@ footer ul{
 
 .Registro_form{
     width: 500px;
-    background-color: #59a9f8;
+    background: linear-gradient(#abc5f5, #76f8de);
     padding: 30px;
     margin: auto;
     margin-top: 100px;
@@ -389,18 +401,9 @@ footer ul{
     transform: scale(1.1);
     box-shadow: 10px 5px 10px black;
 }
-#galeria col-lg-4 {
-    margin: 0 !important;
-    padding: 25px;
-}
 
-#galeria img {
-    width: 100%;
-    height: 250px;
-}
-
-#galeria img:hover {
-    border: 5px solid green;
+.texto-galeria{
+    color: #000000;
 }
 
 
