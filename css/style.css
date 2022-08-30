@@ -1,5 +1,11 @@
 /* Index */
 
+/*Animacion*/
+/* @keyframes animacion-galeria{
+    0%{
+        
+    }
+} */
 :root{
     --clippy: polygon(0 0, 0 0, 0 100%, 0% 100%);
 }
@@ -373,6 +379,16 @@ footer ul{
 
 /* galeria */
 
+.galeria-img{
+    width: 100%;
+    margin-bottom: 30px;
+    transition: all 1s;
+}
+
+.galeria-img:hover{
+    transform: scale(1.1);
+    box-shadow: 10px 5px 10px black;
+}
 #galeria col-lg-4 {
     margin: 0 !important;
     padding: 25px;
